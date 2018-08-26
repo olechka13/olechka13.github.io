@@ -1,0 +1,167 @@
+* {box-sizing: border-box;  }
+
+div a i.fa-angle-left {
+	color: red;
+	font-size: 30px;
+}
+
+
+div a i.fa-angle-right  {
+	color: red;
+	font-size: 30px;
+}
+
+
+div a i.fa-angle-right:hover  {
+	color: green;
+	font-size: 40px;
+	}
+
+div a i.fa-angle-left:hover  {
+	color: green;
+	font-size: 40px;
+	}
+
+
+div.three-dots div {
+	float: left;
+	margin-right: 5px;
+}
+
+
+div.three-dots div a i.fa-circle{
+	color: red;
+	opacity: 0.5;
+}
+
+/*div.three-dots div:first-child a i.fa-circle {
+	color: green;
+}
+*/
+
+
+div.three-dots div a i.fa-circle:hover {
+	opacity: 1;
+}
+
+.general-window-of-slider {
+	width: 100%;
+	height: 300px;
+	border: solid red 1px;
+	display: block;
+	position: relative;
+	padding: 0 20px 0;
+}
+
+
+div.general-window-of-slider div.slider {
+	position: absolute;
+	bottom: 0;
+	top: 0;
+	margin: auto 0;
+	width: 20px;
+	height: 20px;
+	display: block;
+	z-index: 999;
+}
+
+div.slider a.slider-ref {
+	display: block;
+	width: 100%;
+	height: 100%;
+}
+
+div.general-window-of-slider div.left{
+	left: 5%;
+}
+
+
+div.general-window-of-slider div.right{
+	right: 5%;
+}
+
+
+.image {
+	position: absolute;
+	text-align: center;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	top: 0;
+	margin: 0 auto;
+}
+
+.image img {
+	width: 100%;
+	height: 100%;
+}
+
+
+div.general-window-of-slider div.three-dots {
+	position: absolute;
+	right: 0;
+	left: 0;
+	top: 90%;
+	margin: 0 auto;
+	width: 60px;
+	height: 25px;
+	display: block;
+	z-index: 999;
+}
+
+div.general-window-of-slider div.coming {
+	position: absolute;
+	width: 40%;
+	height: 100%;
+	z-index: 99;
+	display: none;
+}
+
+
+div.general-window-of-slider div.coming-text {
+	left: 60%;
+}
+
+
+
+div.general-window-of-slider div.coming-image img {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	animation-duration: 2s;
+	animation:image 2s;
+	
+}
+
+@keyframes image {
+from {left:-100%;}
+to {left:0;}
+}
+
+div.general-window-of-slider div.coming-text p {
+	color: green;
+	font: italic bold 30px sans-serif; 
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	animation-duration: 3s;
+	animation:text 3s;
+	
+}
+
+@keyframes text {
+from {right:-100%;}
+to {right:0;}
+}
+
+
+@media screen and (max-width:320px) {
+	div div a i.fa-angle-right, i.fa-angle-left, i.fa-circle {
+		display: none;
+	}
+
+	div div p#inner-text{
+		font-size:12px; 
+	}
+
+} 
